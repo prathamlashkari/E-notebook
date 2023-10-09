@@ -1,10 +1,10 @@
 import React from 'react'
 import Notes from "./Notes.js";
-export default function Home() {
- 
+export default function Home(props) {
+   const {showalert} = props
   return (
-    <div>
-      <Notes/>
+    <div >
+      <Notes showalert={showalert}/>
     </div>
   )
 }

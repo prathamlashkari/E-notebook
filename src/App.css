@@ -1,5 +1,5 @@
 .carcbackground{
-    background: #cabeff;
+    background: #fffbb1;
 }
 .icons{
     display: flex;
@@ -9,3 +9,15 @@
 .icons i {
     margin-left: 1.5em;
 }
+.headcolour{
+    color: #ebeb5c;
+    
+}
+
+
+.bgimg{
+    background-image: url('./resources/bgimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+  }
+ 
