@@ -31,7 +31,7 @@ export default function Signup(props) {
   }
   return (
     <>
-      <div className="container my-2 " style={{ height: "40em" }}>
+      <div className="container my-2 " style={{ height: "50em" }}>
         <form onSubmit={onsubmit}>
           <div className="mb-3 my-2"  >
             <label htmlFor="name" style={{ color: "#ebeb5c", fontSize: "2em" }} className="form-label ">User Name</label>

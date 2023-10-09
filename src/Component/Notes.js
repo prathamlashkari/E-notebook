@@ -3,6 +3,7 @@ import Notesitem from './Notesitem'
 import newcontext from "../context/noteContext"
 import Addnote from "./Addnote.js";
 import emptyimg from "../resources/empty.png"
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -10,11 +11,17 @@ import emptyimg from "../resources/empty.png"
 export default function Notes(props) {
   const context = useContext(newcontext)
   const { notes, getnotes, editnote } = context
+  let navigate  = useNavigate();
   const [note, setNote] = useState({ id: "", etitle: "", edescription: "", etag: "" })
 
   useEffect(() => {
+    if(localStorage.getItem('token')){
     getnotes();
-  }, []);
+  }
+  else{
+    navigate ('/login')
+  }
+  }, [getnotes,navigate ]);
 
   const ref = useRef(null)
   const refclose = useRef(null)
@@ -39,7 +46,7 @@ export default function Notes(props) {
       </button>
       <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog" role="document">
-          <div className="modal-content">
+          <div className="modal-content" style={{background :"#252323" , color:"white"}}>
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">Edit Notes</h5>
               <button type="button" className="close" data-dismiss="modal" aria-label="Close">

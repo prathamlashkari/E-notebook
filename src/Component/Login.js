@@ -18,7 +18,7 @@ export default function Login(props) {
     if (json.success) {
       localStorage.setItem('token', json.authtoken)
       history('/')
-      props.showalert('SuccessFully login ', 'success')
+      props.showalert('User login SuccessFully ', 'success')
 
     }
     else {
@@ -30,7 +30,7 @@ export default function Login(props) {
   }
   return (
     <>
-      <div className="container my-4 " style={{ height: "35em" }}>
+      <div className="container my-4 " style={{ height: "50em" }}>
 
         <form onSubmit={handleonclick}>
           <div className="mb-3 my-5"  >
