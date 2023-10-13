@@ -22,12 +22,12 @@ npm install
 
 
 ##  Frontend Dependencies
-React Bootstrap: npm install react-bootstrap bootstrap
-React Router DOM: npm install react-router-dom
+- **React Bootstrap**: npm install react-bootstrap bootstrap
+- **React Router DOM**: npm install react-router-dom
 
 ## Backend Dependencies
-Express.js: npm install express
-Nodemon: npm install nodemon
+- **Express.js**: npm install express
+- **Nodemon**: npm install nodemon
 
 ## Features
 
